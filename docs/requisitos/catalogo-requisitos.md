@@ -279,6 +279,10 @@ FR-017 se conserva para no perder el identificador histórico, pero su estado es
 | ID | Categoría y atributo | Requisito no funcional | Ámbito (Global/Local) | UR/FR relacionados | Método de comprobación | Estado |
 | --- | --- | --- | --- | --- | --- | --- |
 | NFR-07 |NFR-Q (Eficiencia; Escalabilidad; Mantenibilidad) |La plataforma mantendrá los objetivos de capacidad y rendimiento definidos para la primera versión sin intervención manual del personal de la organización.| G | -  | Prueba de carga automatizada con 100 usuarios concurrentes y 10 operaciones/s durante 30 min; comprobar mediante registros de monitorización, ausencia de intervención manual. | - |
+| NFR-08 |NFR-I (Interfaz de usuario; Interfaz de software) |La plataforma deberá estar disponible desde ordenador y móvil, priorizando esta ultima opción| G | - | Prueba de escalado en los distintos dispositivos en los que debe estar disponible la web | - |
+| NFR-09 |NFR-Q (Usabilidad) |La plataforma ofrecerá mecanismos de interacción entre los usuarios, por ejemplo comentar, valorar o recomendar recetas| L | - | - | - |
+| NFR-010 |NFR-R (Restricciones presupuestarias) |El proyecto tiene un presupuesto limitado de 90.000 €, que debe cubrir el desarrollo, diseño, pruebas e implementación inicial de la plataforma| G | - | - | - |
+| NFR-011 |NFR-Q (Disponibilidad) |La plataforma deberá estar disponible 24/7 para permitir la interacción entre usuarios en todo momento| G | - | - | - |
 
 Categorías y atributos: 
 1) Requisitos de calidad (NFR-Q): Rendimiento, Usabilidad, Seguridad, Fiabilidad, Disponibilidad, Modificabilidad, Portabilidad, Eficiencia, Escalabilidad, Verificabilidad / Testabilidad, Robustez, Seguridad funcional (safety), Integridad, Reusabilidad, Instalabilidad.
