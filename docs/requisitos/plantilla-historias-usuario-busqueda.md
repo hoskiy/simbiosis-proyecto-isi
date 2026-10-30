@@ -15,54 +15,54 @@
 
 ## Épica de búsqueda
 
-Como [rol], quiero [capacidad amplia], para [beneficio].
+Como usuario, quiero poder añadir criterios, para buscar recetas.
 
 **Estado:** descompuesta en US-01, US-02 y US-03. Conserva la necesidad conjunta.
 
 ## Justificación de la división
 
-[Justificación de los resultados útiles que separa la división.]
+Añadir criterios es demasiado amplio, se debe concretar las diferentes formas de hacerlo
 
 ## US-01
 
-**Título:** [Capacidad]
+**Título:** Buscar mediante texto
 
-Como [rol], quiero [capacidad], para [beneficio].
+Como usuario, quiero poder buscar recetas una palabra o frase, para localizar recetas que coincidan con ella.
 
-**Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
+**Fuentes:** UR-08; UC-21; [FR principal]; acta, acuerdos.
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01.** Dado una búsqueda, cuando se haya añadido una palabra o frase, entonces solo se mostraran recetas que coincidan.
+- **CA-02.** Dado una búsqueda sin resultados, cuando el texto tenga errores ortográficos, entonces el sistema propondrá una corrección.
+- **CA-03.** Dado una búsqueda sin resultados, cuando el texto no tenga errores ortográficos, entonces el sistema propondrá alternativas relacionadas con los criterios.
 
 ## US-02
 
-**Título:** [Capacidad]
+**Título:** Buscar por ingredientes incluidos
 
-Como [rol], quiero [capacidad], para [beneficio].
+Como usuario, quiero poder incluir ingredientes, para buscar recetas que los contengan.
 
-**Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
+**Fuentes:** UR-08; UC-21; [FR principal]; acta, acuerdos.
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01.** Dado una búsqueda, cuando haya ingredientes incluidos, entonces solo se mostraran recetas que contengan todos los ingredientes seleccionados.
+- **CA-02.** Dado una búsqueda, cuando alguno de los ingredientes incluidos también esté excluido, entonces el sistema avisará al usuario para que corrija el conflicto.
 - **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
 
 ## US-03
 
-**Título:** [Capacidad]
+**Título:** Excluir ingredientes
 
-Como [rol], quiero [capacidad], para [beneficio].
+Como usuario, quiero poder excluir ingredientes, para buscar recetas que no los incluyan.
 
-**Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
+**Fuentes:** UR-08; UC-21; [FR principal]; acta, acuerdos.
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01.** Dado una busqueda, cuando haya ingredientes excluidos, entonces solo se mostraran recetas que no contengan esos ingredientes.
+- **CA-02.** Dado una búsqueda, cuando alguno de los ingredientes excluidos también esté incluido, entonces el sistema avisará al usuario para que corrija el conflicto.
 - **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
 
 ## Revisión INVEST
